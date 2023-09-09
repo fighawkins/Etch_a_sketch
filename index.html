@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <title>16x16 Grid</title>
 </head>
 <body>
-    
+    <div class="grid-container">
+        <!-- 16x16 boxes will go here -->
+    </div>
+    <script>
+   const gridContainer = document.querySelector('.grid-container');
+
+for (let i = 0; i < 16; i++) {
+    for (let j = 0; j < 16; j++) {
+        const gridItem = document.createElement('div');
+        gridItem.classList.add('grid-item');
+        gridContainer.appendChild(gridItem);
+    }
+}
+    </script>
 </body>
 </html>
