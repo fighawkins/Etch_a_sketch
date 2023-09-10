@@ -1,38 +1,31 @@
-#buttons {
-    list-style: none;
-    padding: 0;
-    display: flex; /* Display buttons in a row */
-    gap: 10px; /* Add some spacing between buttons */
-  }
-  
-  .button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000000;
-    margin-right: 30px;
-    width: 150px;
-    height: 60px; /* Set the height to match the line-height */
-  }
-  
-  .button-container:hover {
-    background-color: #33B5E5; /* Change background color on hover */
-  }
-  
-  .button-container a {
-    text-decoration: none;
-    color: #FFFFFF;
-    display: block;
-  }
-  
-  header {
-    display: flex;
-    align-items: center; /* Vertical centering */
-    flex-direction: column; /* Stacks elements vertically */
-    height: 100vh; /* 100% of the viewport height */
-  }
-  
-  /* Style for the h1 element */
-  header h1 {
-    margin-bottom: 20px; /* Add some space below the h1 */
-  }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 400px;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 500px;
+  align-items: center;
+  margin: 20px;
+}
+
+.grid-container {
+  width: 500px;
+  height: 500px;
+  display: grid;
+  border: 1px solid black;
+}
