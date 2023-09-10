@@ -3,24 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Clone</title>
     <link rel="stylesheet" href="styles.css">
-
-    <title>16x16 Grid</title>
+   
 </head>
 <body>
-    <div class="grid-container">
-        <!-- 16x16 boxes will go here -->
-    </div>
-    <script>
-    const gridContainer = document.querySelector('.grid-container');
+   <header>
+    <h1>Etch a Sketch</h1>
+    <ul id="buttons">
+        <li id="randombtn">
+          <div class="button-container">
+            <a href="#">random</a>
+          </div>
+        </li>
+        <li id="blackbtn">
+          <div class="button-container">
+            <a href="#">black</a>
+          </div>
+        </li>
+        <li id="resetbtn">
+          <div class="button-container">
+            <a href="#">reset</a>
+          </div>
+        </li>
+      </ul>
+   </header>
+<div class = "grid-container">
 
-for (let i = 0; i < 16; i++) {
-    for (let j = 0; j < 16; j++) {
-        const gridItem = document.createElement('div');
-        gridItem.classList.add('grid-item');
-        gridContainer.appendChild(gridItem);
-    }
-}
-    </script>
+    
+</div>
+    <script src="script.js"></script>
 </body>
 </html>
